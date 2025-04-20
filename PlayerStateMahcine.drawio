@@ -1,20 +1,52 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
   <diagram name="第 1 页" id="or5l19DesvoENM_aWey-">
-    <mxGraphModel dx="1680" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4397" dy="3112" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="SoIOG_eSyJAdgTNyIFS2-24" value="&lt;b&gt;&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 19px;&quot;&gt;PlayerGroundedState&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;spacingBottom=140;" vertex="1" parent="1">
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-24" target="SoIOG_eSyJAdgTNyIFS2-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-59" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;player.IsGroundedDetected &amp;amp;&amp;amp; Space&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-58">
+          <mxGeometry x="-0.4643" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-24" target="SoIOG_eSyJAdgTNyIFS2-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-69" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;!player.IsGroundDetected()&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-67">
+          <mxGeometry x="-0.5368" y="4" relative="1" as="geometry">
+            <mxPoint x="-4" y="210" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-24" target="SoIOG_eSyJAdgTNyIFS2-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-71" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;player.IsGroundDetected() &amp;amp;&amp;amp; Mouse0&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-70">
+          <mxGeometry x="-0.0952" y="2" relative="1" as="geometry">
+            <mxPoint x="31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-24" value="&lt;b&gt;&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 19px;&quot;&gt;PlayerGroundedState&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;spacingBottom=140;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="470" y="630" width="990" height="240" as="geometry" />
         </mxCell>
         <mxCell id="SoIOG_eSyJAdgTNyIFS2-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PlayerStateMachine&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;PlayerState &lt;/b&gt;currentState&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;方法：&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Initilize();&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ChangeState();&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="260" y="120" width="250" height="370" as="geometry" />
+          <mxGeometry x="260" y="-560" width="250" height="370" as="geometry" />
         </mxCell>
         <mxCell id="SoIOG_eSyJAdgTNyIFS2-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PlayerState&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;PlayerStateMachine &lt;/b&gt;stateMachine&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Player &lt;/b&gt;player&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;string animBoolName&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Components:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Rigibody2D &lt;/b&gt;rb;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Animator&lt;/b&gt; anim&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;float&amp;nbsp;&lt;b&gt;stateTimer&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;bool&amp;nbsp;&lt;b&gt;triggerCalled&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;方法：&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;PlayerState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Enter();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Exit();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Update();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;AnimationFinishTrigger();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="70" width="440" height="530" as="geometry" />
+          <mxGeometry x="1100" y="-610" width="440" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-17" target="SoIOG_eSyJAdgTNyIFS2-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-85" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;在Player中设置监听方法：CheckForDashInput()，表示从任意状态都可以切换到dashState（设置了撞墙和dash冷却时间内除外）&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;在进入dashState时，即Enter函数中，设置了stateTimer为dashDuration，在Update中，当stateTimer &amp;lt; 0时，结束dash，转移到idleState&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-84">
+          <mxGeometry x="0.7563" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="SoIOG_eSyJAdgTNyIFS2-17" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Player&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;PlayerStateMachine stateMahcine&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;PlayerState的各种子类对象&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Components:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Animator&lt;/b&gt; anim;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Rigibody2D&lt;/b&gt; rb;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Velocity模块&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Collision模块:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Transform &lt;/b&gt;groundCheck&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Transform&lt;/b&gt; wallCheck&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;LayerMask&lt;/b&gt; whatIsGround&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;bool &lt;b&gt;IsGroundDetected()&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;bool &lt;b&gt;IsWallDetected()&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Flip模块:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;bool &lt;/b&gt;facingRight&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;int &lt;/b&gt;facingDir&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Filp();&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;FlipController();&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;float jumpForce&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="680" y="20" width="250" height="570" as="geometry" />
+          <mxGeometry x="680" y="-660" width="250" height="570" as="geometry" />
         </mxCell>
         <mxCell id="SoIOG_eSyJAdgTNyIFS2-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-19" target="SoIOG_eSyJAdgTNyIFS2-46">
           <mxGeometry relative="1" as="geometry">
@@ -47,6 +79,143 @@
         </mxCell>
         <mxCell id="SoIOG_eSyJAdgTNyIFS2-46" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PlayerMoveState&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="1180" y="750" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-51" target="SoIOG_eSyJAdgTNyIFS2-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="730" />
+              <mxPoint x="370" y="730" />
+              <mxPoint x="370" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-90" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;stateTimer &amp;lt; 0&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-86">
+          <mxGeometry x="-0.637" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="41" y="500" as="sourcePoint" />
+            <mxPoint x="786" y="1813.33" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="41" y="1500" />
+              <mxPoint x="636" y="1500" />
+              <mxPoint x="636" y="1813" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-89" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;!player.IsGroundDetected()&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;amp;&amp;amp;player.IsWallDetected()&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-87">
+          <mxGeometry x="-0.3836" y="-4" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-51" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PlayerDashState&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="440" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-53" target="SoIOG_eSyJAdgTNyIFS2-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-61" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;rb.velocity &amp;lt; 0&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-60">
+          <mxGeometry x="-0.3221" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-53" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PlayerJumpState&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;in Ener():&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;player.SetVelocity(rb.v.x, player.jumpForce)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;in Update():&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="780" y="980" width="370" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-54" target="SoIOG_eSyJAdgTNyIFS2-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-63" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;player.IsGroundDetected()&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-62">
+          <mxGeometry x="0.1152" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-54" target="SoIOG_eSyJAdgTNyIFS2-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-66" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;player.IsWallDetected()&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-65">
+          <mxGeometry x="0.1358" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-54" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PlayerAirState&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;在update中，设置了接收xInput输入，下落时移动&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1300" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-55" target="SoIOG_eSyJAdgTNyIFS2-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2270" y="330" />
+              <mxPoint x="625" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-83" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;triggerCalled == true；&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;在每一次攻击动画完成时添加事件，调用方法设置triggerCalled为true；&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(241, 27, 77);&quot; face=&quot;Comic Sans MS&quot;&gt;Attention1:&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(241, 27, 77);&quot; face=&quot;Comic Sans MS&quot;&gt;在PlayerPrimaryAttackState的Exit方法中，启用协程BusyFor：&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot; color=&quot;#f11b4d&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;设置isBusy的状态：在player.isBusyTime时间内保持为ture，&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot; color=&quot;#f11b4d&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;作用是：在IdleState状态中，当isBusy为ture时，不能切换到moveState，也就是在退出AttackState的isBusyTime时间内，角色无法移动&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-82">
+          <mxGeometry x="-0.3671" y="3" relative="1" as="geometry">
+            <mxPoint x="-329" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-55" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PlayerPrimaryAttackState&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Variables：&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;int comboCounter;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;float lastTimeAttacked;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;float comboWindow&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;在Enter方法中：&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;根据lastTimeAttacked和comboWindow计算comboCounter,comboCounter用于记录当前是第几次连续攻击；&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;设置stateTimer&amp;nbsp; = .1f; 在Unpdate中，如果stateTimer &amp;lt; 0， 则将角色速度归零，表示在刚进入AttackState时，在stateTimer时间内保留上一个状态的行为惯性效果&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="535" width="500" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-56" target="SoIOG_eSyJAdgTNyIFS2-57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-40" y="2168" />
+              <mxPoint x="-40" y="1920" />
+              <mxPoint x="965" y="1920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-79" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;stateTimer &amp;lt; 0 // 跳跃时间结束&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-78">
+          <mxGeometry x="-0.748" y="-6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-56" target="SoIOG_eSyJAdgTNyIFS2-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-290" y="2198" />
+              <mxPoint x="-290" y="840" />
+              <mxPoint x="370" y="840" />
+              <mxPoint x="370" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-81" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;player.IsGroundDetected()&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-80">
+          <mxGeometry x="-0.4838" y="-3" relative="1" as="geometry">
+            <mxPoint y="182" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-56" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PlayerWallJumpState&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="2168.33" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-57" target="SoIOG_eSyJAdgTNyIFS2-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-73" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Space&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;// 进入时，即在Enter函数中，设置了stateTimer时间，&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;以及player.SetVelocity&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 20px;&quot;&gt;&lt;b&gt;(5 * -player.facingDir, player.jumpForce)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-72">
+          <mxGeometry x="0.0476" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SoIOG_eSyJAdgTNyIFS2-57" target="SoIOG_eSyJAdgTNyIFS2-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="1828.34" as="sourcePoint" />
+            <mxPoint x="520" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-360" y="1813" />
+              <mxPoint x="-360" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-76" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;player.IsGroundDetected() // 角色到达地面&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;or&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;xInput != 0 &amp;amp;&amp;amp; player.facingDir != xInput&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;// 玩家通过xInput与当前在墙上相反的方向，即跳墙；则角色会进入idleState，&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;然后在idleState中由于此时player.IsGroundDetected为false，会立刻进入airState&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SoIOG_eSyJAdgTNyIFS2-75">
+          <mxGeometry x="-0.6546" y="-3" relative="1" as="geometry">
+            <mxPoint x="-62" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoIOG_eSyJAdgTNyIFS2-57" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PlayerWallSlideState&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;在Update中，设置了玩家可以通过输入yInput来控制角色的滑行速度&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1728.33" width="270" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
