@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="27.0.3">
   <diagram name="第 1 页" id="d9a0k_mFq8F035uaQbnA">
-    <mxGraphModel dx="1901" dy="2205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2194" dy="2364" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -36,6 +36,21 @@
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-23" value="List&amp;lt;InventoryItem&amp;gt; inventoryItems" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;" vertex="1" parent="1">
           <mxGeometry x="1610" y="-110" width="238" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zPP25lYwPmgQLzwcbYbT-27" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="680" y="-550" width="1060" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="zPP25lYwPmgQLzwcbYbT-24" value="仓库UI：&lt;div&gt;仓库中物品列表List;&lt;/div&gt;&lt;div&gt;仓库中物品属性 - 物品列表Dictionary&lt;br&gt;（Dict的作用：可以根据物品属性&lt;br&gt;找到仓库中的该物品）；&lt;/div&gt;&lt;div&gt;方法：1.向仓库中添加物品&lt;/div&gt;&lt;div&gt;2. 从仓库中删除物品&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;spacingLeft=-500;" vertex="1" parent="zPP25lYwPmgQLzwcbYbT-27">
+          <mxGeometry width="1060" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="zPP25lYwPmgQLzwcbYbT-28" value="" style="group" vertex="1" connectable="0" parent="zPP25lYwPmgQLzwcbYbT-27">
+          <mxGeometry x="470" y="39.9955905511811" width="525.5555555555554" height="147.4015748031496" as="geometry" />
+        </mxCell>
+        <mxCell id="zPP25lYwPmgQLzwcbYbT-25" value="仓库中具体存储物品&lt;div&gt;物品属性；&lt;/div&gt;&lt;div&gt;物品数量；&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;spacingLeft=-200;" vertex="1" parent="zPP25lYwPmgQLzwcbYbT-28">
+          <mxGeometry width="525.5555555555555" height="147.4015748031496" as="geometry" />
+        </mxCell>
+        <mxCell id="zPP25lYwPmgQLzwcbYbT-26" value="物品的具体属性&lt;div&gt;name;&lt;/div&gt;&lt;div&gt;icon;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" vertex="1" parent="zPP25lYwPmgQLzwcbYbT-28">
+          <mxGeometry x="290.4888888888889" y="46.06299212598426" width="182.51111111111112" height="92.1259842519685" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
