@@ -133,7 +133,7 @@
           <mxGeometry x="850" y="10" width="1020" height="380" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-70" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="3010" y="420" width="1180" height="340" as="geometry" />
+          <mxGeometry x="2960" y="490" width="1180" height="340" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-68" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;UI_ItemSlot : MonoBehaviour, &lt;font style=&quot;color: rgb(1, 9, 255);&quot;&gt;IPointerDownHandler&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Values;&lt;/div&gt;&lt;div&gt;private Image itemImage;&lt;/div&gt;&lt;div&gt;private TextMeshProUGUI itemText;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Methods&lt;/div&gt;&lt;div&gt;UpdateSlot(Inventory _item);&lt;br&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(31, 6, 255);&quot; face=&quot;Comic Sans MS&quot;&gt;OnPointerDown();&lt;/font&gt;&lt;/b&gt;&lt;br&gt;CleanUpSlot();&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontStyle=0;size=130;" vertex="1" parent="zPP25lYwPmgQLzwcbYbT-70">
           <mxGeometry width="1030" height="340" as="geometry" />
