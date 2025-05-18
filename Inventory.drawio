@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.5">
   <diagram name="第 1 页" id="d9a0k_mFq8F035uaQbnA">
-    <mxGraphModel dx="4392" dy="3112" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2824" dy="1909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -193,14 +193,59 @@
         <mxCell id="BGFAUAhON6pVx7UzGT0B-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BGFAUAhON6pVx7UzGT0B-7" target="BGFAUAhON6pVx7UzGT0B-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BGFAUAhON6pVx7UzGT0B-16" value="&lt;font&gt;ItemData_Equipment&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;string itemName;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;Sprite icon;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;EquipmentType equipmentType:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;Weapon / Armor / Amulet / Flask;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;各种属性加成；&lt;/div&gt;&lt;div&gt;ItemEffect[] itemEffects; 魔法效果数组&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;List&amp;lt;InventoryItem&amp;gt; craftMaterials;&lt;/div&gt;&lt;div&gt;/*&lt;/div&gt;&lt;div&gt;合成该装备所需要的材料List&lt;/div&gt;&lt;div&gt;*/&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Methods:&lt;/div&gt;&lt;div&gt;void ExcuteItemEffect(Transform _enemyPosition)&lt;/div&gt;&lt;div&gt;/*&lt;/div&gt;&lt;div&gt;根据敌人的位置执行魔法特效&lt;/div&gt;&lt;div&gt;*/&lt;/div&gt;&lt;div&gt;AddModifiers();&lt;/div&gt;&lt;div&gt;RemoveModifiers();&lt;/div&gt;&lt;div&gt;// 将当前装备的属性加成应用到角色上&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
-          <mxGeometry x="-155" y="445" width="410" height="625" as="geometry" />
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-16" value="&lt;font&gt;ItemData_Equipment&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;string itemName;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;Sprite icon;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;EquipmentType equipmentType:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;Weapon / Armor / Amulet / Flask;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;各种属性加成；&lt;/div&gt;&lt;div&gt;ItemEffect[] itemEffects; 魔法效果数组&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;List&amp;lt;InventoryItem&amp;gt; craftMaterials;&lt;/div&gt;&lt;div&gt;/*&lt;/div&gt;&lt;div&gt;合成该装备所需要的材料List&lt;/div&gt;&lt;div&gt;*/&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Methods:&lt;/div&gt;&lt;div&gt;void ExcuteItemEffect(Transform _enemyPosition)&lt;br&gt;{&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;foreach (var itemEffect in itemEffects)&lt;/span&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; itemEffect.ExecuteEffect(_enemyPosition);&lt;/div&gt;&lt;div&gt;}&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;/*&lt;/div&gt;&lt;div&gt;根据敌人的位置执行魔法特效&lt;/div&gt;&lt;div&gt;*/&lt;/div&gt;&lt;div&gt;AddModifiers();&lt;/div&gt;&lt;div&gt;RemoveModifiers();&lt;/div&gt;&lt;div&gt;// 将当前装备的属性加成应用到角色上&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="-242.5" y="460" width="585" height="625" as="geometry" />
         </mxCell>
         <mxCell id="BGFAUAhON6pVx7UzGT0B-18" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;UI_CraftSlot : UI_ItemSlot&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;OnPointerDown()中调用CanCraft()&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontStyle=0;size=130;" vertex="1" parent="1">
           <mxGeometry x="2800" y="840" width="1030" height="340" as="geometry" />
         </mxCell>
         <mxCell id="BGFAUAhON6pVx7UzGT0B-19" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;UI_EquipmentSlot : UI_ItemSlot&lt;/b&gt;&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontStyle=0;size=130;" vertex="1" parent="1">
           <mxGeometry x="2760" y="1270" width="1030" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-21" value="ItemEffect : ScriptableObject&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;virtual void ExecuteEffect();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-850" y="585" width="360" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-26" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="-910" y="1250" width="392.5" height="601" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-25" value="CharacterStats" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Comic Sans MS;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-803.74" y="1300" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-27" value="Major Stats;&lt;div&gt;Magic Stats;&lt;/div&gt;&lt;div&gt;Defensive Stats;&lt;/div&gt;&lt;div&gt;Offensive Stats;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-850" y="1380" width="268.75" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-35" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-1400" y="1410" width="340" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-22" value="&lt;font style=&quot;color: rgb(1, 255, 18); font-size: 25px;&quot;&gt;Stat&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;int baseValue;&lt;/div&gt;&lt;div&gt;List&amp;lt;int&amp;gt; modifiers;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SetDefaultValue(int _value);&lt;br&gt;&lt;br&gt;AddModifier(int _modifier)&lt;br&gt;{modifiers.Add(_modifier);}&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RemoveModifier(int _modifier)&lt;br&gt;{modifiers.Remove(_modifier);}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GetValue()&lt;br&gt;/*&lt;/div&gt;&lt;div&gt;finalValue == ∑ modifiers&lt;/div&gt;&lt;div&gt;*/&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="BGFAUAhON6pVx7UzGT0B-35">
+          <mxGeometry y="-120" width="340" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-23" value="Stat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontColor=#000000;fontFamily=Comic Sans MS;" vertex="1" parent="BGFAUAhON6pVx7UzGT0B-35">
+          <mxGeometry x="110" y="-60" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-39" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-350" y="1380" width="340" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-40" value="TakeDamage(int _damage);&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Die( ) {GenerateDrop()};&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="BGFAUAhON6pVx7UzGT0B-39">
+          <mxGeometry width="340" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-41" value="PlayerStat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontColor=#000000;fontFamily=Comic Sans MS;" vertex="1" parent="BGFAUAhON6pVx7UzGT0B-39">
+          <mxGeometry x="110" y="40" width="120" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-42" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="150" y="1390" width="340" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-43" value="TakeDamage(int _damage)；&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Modify(Stat _stat)&lt;br&gt;{_stat.AddModifier(...)}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Die()&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="BGFAUAhON6pVx7UzGT0B-42">
+          <mxGeometry width="340" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-44" value="EnemyStat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontColor=#000000;fontFamily=Comic Sans MS;" vertex="1" parent="BGFAUAhON6pVx7UzGT0B-42">
+          <mxGeometry x="110" y="40" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-45" value="&lt;div&gt;事件&lt;/div&gt;public System.Action onHealthChanged;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="-850" y="1500" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-46" value="协程：IEnumerator StatModCoroutine(int _modifier, float _duration, Stat _statToModify)&lt;div&gt;/*给指定_stat添加buff, 在IncreaseStatBy()方法中启动*/&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="-880" y="1600" width="350" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
