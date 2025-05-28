@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.9">
   <diagram name="第 1 页" id="-2ZJdPU1EGzkgh0zn1c5">
-    <mxGraphModel dx="7358" dy="8953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7358" dy="11291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -597,7 +597,7 @@
           <mxGeometry x="230" y="440" width="718.75" height="110" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-282" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="10960" y="-4700" width="4537" height="1783" as="geometry" />
+          <mxGeometry x="10960" y="-4700" width="4580" height="1783" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-243" value="Stat:None&lt;div&gt;int baseValue;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;font style=&quot;color: rgb(255, 1, 43);&quot;&gt;List &amp;lt;int&amp;gt; modifiers;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Methods&lt;/div&gt;&lt;div&gt;int GetValue(): return baseValue + modifiers.value;&lt;/div&gt;&lt;div&gt;void AddModifier();&lt;/div&gt;&lt;div&gt;void RemoveModifier();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
           <mxGeometry y="530" width="1480" height="523" as="geometry" />
@@ -639,16 +639,52 @@
           <mxGeometry x="3040" y="1570" width="206.21" height="103.85" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-258" value="&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;DoDamage(CharacterStats _targetStats)&lt;/font&gt;&lt;/b&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;int totalDamage = damage.GetValue() + strength.GetValue();&lt;br&gt;_targetStats.&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;TakeDamage(totalDamage);&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
-          <mxGeometry x="3340" y="260" width="1197" height="381.5" as="geometry" />
+          <mxGeometry x="3340" y="240" width="1240" height="401.5" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-261" value="&lt;font style=&quot;&quot; face=&quot;Courier New&quot;&gt;&lt;b&gt;TakeDamage(int _damage)&lt;/b&gt;&lt;/font&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;currentHealth -= _damage;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;if (currentHealth &amp;lt; 0)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Die();&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
-          <mxGeometry x="3340" y="681.5" width="1197" height="361.5" as="geometry" />
+          <mxGeometry x="3340" y="740" width="1220" height="373" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-262" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.502;entryY=0.117;entryDx=0;entryDy=0;entryPerimeter=0;" parent="B_nVN4fboFG4_9kOqA88-282" source="B_nVN4fboFG4_9kOqA88-258" target="B_nVN4fboFG4_9kOqA88-261" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-268" value="这里的DoDamage接受一个CharacterStats 类型的参数target;是将自己（this）的damage 对 targetStats的Health造成伤害;&lt;div&gt;在自己的DoDamage中，调用targetStats的TakeDamage()方法&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=210;position=0.56;base=92;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontSize=50;fontStyle=1;fontFamily=Comic Sans MS;position2=0.32;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
           <mxGeometry x="2450" width="890" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-11" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;Entity中，注册了事件&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;public System.Action.onFlipped;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;在Entity脚本的Flip()方法中，&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;控制角色Flip时，&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;onFlipped ?.Invoke();&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" vertex="1" parent="1">
+          <mxGeometry x="11550" y="-6960" width="1240" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-12" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;CharacterStats脚本中，注册了事件&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;public System.Action.onHealthChanged;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;在CharacterStats的IncreaseHealtyBy方法&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;和DecreaseHealthBy方法中，&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;onHealthChanged?.Invoke();&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" vertex="1" parent="1">
+          <mxGeometry x="11510" y="-5940.5" width="1240" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="13020" y="-7030" width="2090" height="1890" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-2" value="UI_HealthBar&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;//Values&lt;/div&gt;&lt;div&gt;RectTransform&amp;nbsp; MyTransform // 血条的transform，用来控制血条的翻转&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;//Methods&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;private void UpdateHealthUI() // 更新血条&lt;/div&gt;&lt;div&gt;private void FlipUI() // 翻转血条&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="lwo_E-M_du47u114pg7D-15">
+          <mxGeometry y="400" width="2090" height="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-7" value="" style="group" vertex="1" connectable="0" parent="lwo_E-M_du47u114pg7D-15">
+          <mxGeometry x="320" y="450" width="800" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-4" value="Player player" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=70;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=50;fontStyle=1;fontFamily=Comic Sans MS;" vertex="1" parent="lwo_E-M_du47u114pg7D-7">
+          <mxGeometry width="800" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-5" value="Entity_Status_UI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=50;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="lwo_E-M_du47u114pg7D-7">
+          <mxGeometry x="120" y="10" width="530" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-9" value="Entity_Status_UI本质上是一个UI-Slider，由Slider的Background&lt;div&gt;和Fill Area组成，通过Slider中的Value来控制Fill Area的范围形成血条&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=210;position=0.56;base=92;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontSize=50;fontStyle=1;fontFamily=Comic Sans MS;position2=0;" vertex="1" parent="lwo_E-M_du47u114pg7D-15">
+          <mxGeometry x="1200" width="890" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-13" value="在UI_HealthBar的Start()中：&lt;div&gt;entity.onFlipped += FlipUI;&lt;/div&gt;&lt;div&gt;myStats.onHealthChanged += UpdateHealthUI;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="lwo_E-M_du47u114pg7D-15">
+          <mxGeometry x="100" y="1490" width="780" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-14" value="在UI_HealthBar的&lt;div&gt;OnDisable()中，&lt;/div&gt;&lt;div&gt;从onFlipped中移除FlipUI;&lt;/div&gt;&lt;div&gt;从onHealthChnaged中移除UpdateHealthUI&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="lwo_E-M_du47u114pg7D-15">
+          <mxGeometry x="1020" y="1490" width="1040" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-16" value="&lt;div&gt;EntityFX&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Methods：&lt;/div&gt;&lt;div&gt;public void MakeTransparent(bool _transparent)&amp;nbsp;&lt;/div&gt;&lt;div&gt;// 让角色隐身（用于黑洞技能）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;private IEnumerator FlashFX()；&lt;/div&gt;&lt;div&gt;// 用于控制角色被击中时瞬间白光闪烁；&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;private void RedColorBlink();&lt;/div&gt;&lt;div&gt;/*&lt;/div&gt;&lt;div&gt;&amp;nbsp;在SkeletonStunnedState（敌人被成功反击造成昏迷的状态），&lt;/div&gt;&lt;div&gt;在Enter()方法中，&lt;/div&gt;&lt;div&gt;enemy.fx.InvokeRepeating(&quot;RedColorBlink&quot;, 0, 0.1f);&lt;/div&gt;&lt;div&gt;*/&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;private void&amp;nbsp;&lt;/div&gt;&lt;div&gt;IgniteColorFx() / ShockColorFx() / FrozenColorFx()&lt;/div&gt;&lt;div&gt;分别对应： 点燃时效果 / 感电时效果 / 冻结时效果&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;通过协程中调用效果，例如对于感电效果&lt;/div&gt;&lt;div&gt;&lt;div&gt;public IEnumerator ShockFxFor(float _seconds)&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; yield return new WaitForSeconds(flashDuration);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; InvokeRepeating(&quot;ShockColorFx&quot;, 0, 0.3f);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Invoke(&quot;CancelColorChange&quot;, _seconds);&lt;/div&gt;&lt;div&gt;}；&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="18100" y="-7030" width="2430" height="2210" as="geometry" />
+        </mxCell>
+        <mxCell id="lwo_E-M_du47u114pg7D-17" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;在CharacterStats脚本中，&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;对于电系伤害，ApplyShock()方法中，&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;fx.StartCoroutine(&quot;ShockFxFor&quot;, ailmentDuration);&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" vertex="1" parent="1">
+          <mxGeometry x="16330" y="-6680" width="1660" height="450" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
