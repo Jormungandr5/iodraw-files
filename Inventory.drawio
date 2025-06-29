@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.1">
   <diagram name="第 1 页" id="d9a0k_mFq8F035uaQbnA">
-    <mxGraphModel dx="4506" dy="3892" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2950" dy="3044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -316,7 +316,7 @@
             <mxPoint x="3568" y="-1400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-18" value="CraftWindow中提供了SetupCraftWindow方法&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;再SetupCraftWindow（ItemData_Equipment _data）方法中，先将craftButton上的监听事件移除，再清除掉所有materialImage；&lt;/div&gt;&lt;div&gt;然后根据传入的参数ItemData_Equipment _data，更新craftWindow中显示的各项数据，并重新给craftButton添加监听事件CanCraft&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=30;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-18" value="CraftWindow中提供了SetupCraftWindow方法&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;再SetupCraftWindow（ItemData_Equipment _data）方法中，先将craftButton上的监听事件移除，再清除掉所有materialImage；&lt;/div&gt;&lt;div&gt;然后根据传入的参数ItemData_Equipment _data，更新craftWindow中显示的各项数据，并重新给craftButton添加监听事件CanCraft(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;ItemData_Equipment _itemToCraft, List&amp;lt;InventoryItem&amp;gt; _requiredMaterials&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CanCraft()方法由inventory提供，根据传入的参数List直接检测在&lt;/div&gt;&lt;div&gt;Inventory- Stash中是否由足够的材料用于合成物品；&lt;/div&gt;&lt;div&gt;如果有足够的材料,则将合成所需材料从stash中删除，并将传入的参数ItemData _Equipment添加到人物装备栏中&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=30;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="5290" y="-1470" width="790" height="340" as="geometry" />
         </mxCell>
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-19" value="itemName" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;size=50;position=0;fontSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;base=40;" vertex="1" parent="1">
@@ -328,11 +328,26 @@
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-21" value="itemDescription" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;size=40;position=0.32;fontSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;base=100;" vertex="1" parent="1">
           <mxGeometry x="4740" y="-850" width="330" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-22" value="MaterialList" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=30;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="5210" y="-880" width="510" height="250" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-36" value="这里是一个materialList,实际上是一个image数组，里面每个材料都是一张图片，右下角有库存中该材料的数量" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=30;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="5210" y="-540" width="510" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-26" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="5230" y="-770" width="130" height="130" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-37" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5188" y="-455.13" as="sourcePoint" />
+            <mxPoint x="4700" y="-630.0045631067959" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-38" value="craftButton" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.23;size=40;position=0.32;fontSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;base=26;" vertex="1" parent="1">
+          <mxGeometry x="4855" y="-730" width="215" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-39" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="5210" y="-850" width="510" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-22" value="MaterialList" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=30;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=top;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-39">
+          <mxGeometry width="510" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-26" value="" style="group" vertex="1" connectable="0" parent="Q-6nTU4BEiaYLGhQLXsv-39">
+          <mxGeometry x="20" y="80" width="130" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-28" value="" style="group" vertex="1" connectable="0" parent="Q-6nTU4BEiaYLGhQLXsv-26">
           <mxGeometry width="130" height="130" as="geometry" />
@@ -346,8 +361,8 @@
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-25" value="MaterialImage.stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-29">
           <mxGeometry x="90" y="90" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-30" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="5380" y="-770" width="130" height="130" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-30" value="" style="group" vertex="1" connectable="0" parent="Q-6nTU4BEiaYLGhQLXsv-39">
+          <mxGeometry x="170" y="80" width="130" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-31" value="MaterialImage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-30">
           <mxGeometry width="130" height="130" as="geometry" />
@@ -355,26 +370,14 @@
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-32" value="MaterialImage.stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-30">
           <mxGeometry x="90" y="90" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-33" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="5540" y="-770" width="130" height="130" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-33" value="" style="group" vertex="1" connectable="0" parent="Q-6nTU4BEiaYLGhQLXsv-39">
+          <mxGeometry x="330" y="80" width="130" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-34" value="MaterialImage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-33">
           <mxGeometry width="130" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-35" value="MaterialImage.stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-33">
           <mxGeometry x="90" y="90" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-36" value="这里是一个materialList,实际上是一个image数组，里面每个材料都是一张图片，右下角有库存中该材料的数量" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=30;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="5210" y="-540" width="510" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-37" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="5188" y="-455.13" as="sourcePoint" />
-            <mxPoint x="4700" y="-630.0045631067959" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-38" value="craftButton" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.23;size=40;position=0.32;fontSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;base=26;" vertex="1" parent="1">
-          <mxGeometry x="4855" y="-730" width="215" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
