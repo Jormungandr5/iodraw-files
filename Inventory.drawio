@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.1">
   <diagram name="第 1 页" id="d9a0k_mFq8F035uaQbnA">
-    <mxGraphModel dx="3332" dy="3252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4858" dy="3633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -202,8 +202,8 @@
         <mxCell id="BGFAUAhON6pVx7UzGT0B-19" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;UI_EquipmentSlot : UI_ItemSlot&lt;/b&gt;&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontStyle=0;size=130;" parent="1" vertex="1">
           <mxGeometry x="2760" y="1270" width="1030" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="BGFAUAhON6pVx7UzGT0B-21" value="ItemEffect : ScriptableObject&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;virtual void ExecuteEffect();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="-850" y="585" width="360" height="170" as="geometry" />
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-21" value="ItemEffect : ScriptableObject&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;virtual void ExecuteEffect(Transform _enemyPosition);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-1860" y="-50" width="520" height="170" as="geometry" />
         </mxCell>
         <mxCell id="BGFAUAhON6pVx7UzGT0B-35" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="-1400" y="1410" width="340" height="400" as="geometry" />
@@ -263,7 +263,7 @@
           <mxGeometry x="24.370000000000005" y="660" width="340" height="120" as="geometry" />
         </mxCell>
         <mxCell id="c_P0FbTjtCR1_C8fdQFH-3" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="-960" y="-20" width="480" height="300" as="geometry" />
+          <mxGeometry x="-730" width="480" height="300" as="geometry" />
         </mxCell>
         <mxCell id="c_P0FbTjtCR1_C8fdQFH-1" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（在游戏中可拾取/掉落的Item）&lt;/div&gt;ItemObject : MonoBehaviour&lt;div&gt;&lt;font color=&quot;#0019ff&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Rigibody2D rb;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0019ff&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;ItemData itemData;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;// Methods&lt;/div&gt;&lt;div&gt;SetupVisuals();&lt;/div&gt;&lt;div&gt;PickUpItem();&lt;/div&gt;&lt;div&gt;SetupItem(); 中调用SetupVisuals()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" parent="c_P0FbTjtCR1_C8fdQFH-3" vertex="1">
           <mxGeometry width="480" height="300" as="geometry" />
@@ -378,6 +378,21 @@
         </mxCell>
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-35" value="MaterialImage.stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-33">
           <mxGeometry x="90" y="90" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-40" value="Buff_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PlayerStats stats;&lt;/div&gt;&lt;div&gt;StatType buffType;&lt;/div&gt;&lt;div&gt;int buffAmount;&lt;/div&gt;&lt;div&gt;float buffDuration;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-2400" y="665" width="530" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-42" value="IceAndFire_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GameObject iceAndFirePrefab;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Vector2 newVelocity;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _respondPosition)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-1780" y="635" width="400" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-44" value="&lt;div&gt;FreezeEnemies_Effect : ItemEffect&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;float duration;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _player)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-1260" y="635" width="400" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-45" value="Heal_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;float healPercent;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-2380" y="280" width="530" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-46" value="LightingStrike_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GameObject lightingStrikePrefab;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;&lt;div&gt;{// Instantiate new LightingStrike; }&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-1760" y="280" width="710" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
