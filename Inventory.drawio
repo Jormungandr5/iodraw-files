@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.1">
   <diagram name="第 1 页" id="d9a0k_mFq8F035uaQbnA">
-    <mxGraphModel dx="5813" dy="3252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="9839" dy="5446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -82,7 +82,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-50" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1060" y="10" width="1940" height="800" as="geometry" />
+          <mxGeometry x="1060" y="10" width="1940" height="1440" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-6" value="&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;//Methods&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;font color=&quot;#0019ff&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;EquipItem(&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; font-weight: 400;&quot;&gt;&lt;font color=&quot;#0019ff&quot;&gt;ItemData _item&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 400; color: light-dark(rgb(0, 25, 255), rgb(175, 196, 255)); background-color: transparent;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font color=&quot;#0019ff&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;UnequipItem(ItemData_Equipment itemToRemove);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font color=&quot;#0019ff&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;AddItem(InventoryItem _item);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font color=&quot;#0019ff&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;CanCraft(ItemData_Equipment _itemToCratft, List&amp;lt;InventoryItem&amp;gt; _requiredMaterials);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font color=&quot;#0019ff&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;RemoveItem(ItemData _item)&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;" parent="zPP25lYwPmgQLzwcbYbT-50" vertex="1">
           <mxGeometry x="20" y="75" width="1340" height="750" as="geometry" />
@@ -115,19 +115,19 @@
           <mxGeometry x="430" y="150" width="376" height="205" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-71" value="" style="group;spacingTop=20;" parent="zPP25lYwPmgQLzwcbYbT-50" vertex="1" connectable="0">
-          <mxGeometry x="710" y="650" width="550" height="160" as="geometry" />
+          <mxGeometry x="710" y="650" width="500" height="160" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-72" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;" parent="zPP25lYwPmgQLzwcbYbT-71" vertex="1" connectable="0">
-          <mxGeometry width="550" height="160" as="geometry" />
+          <mxGeometry width="500" height="160" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-73" value="AddItem(InventoryItem _item)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;container=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="zPP25lYwPmgQLzwcbYbT-71" vertex="1">
-          <mxGeometry y="70" width="550" height="90" as="geometry" />
+          <mxGeometry y="70" width="500" height="90" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-74" value="AddToStash" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;" parent="zPP25lYwPmgQLzwcbYbT-71" vertex="1">
-          <mxGeometry x="59.78260869565217" y="109.09090909090907" width="191.30434782608694" height="50.90909090909091" as="geometry" />
+          <mxGeometry x="54.347826086956516" y="109.09090909090907" width="173.91304347826085" height="50.90909090909091" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-75" value="AddToInventory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;" parent="zPP25lYwPmgQLzwcbYbT-71" vertex="1">
-          <mxGeometry x="298.9130434782609" y="109.09090909090907" width="196.08695652173913" height="50.90909090909091" as="geometry" />
+          <mxGeometry x="271.7391304347826" y="109.09090909090907" width="178.26086956521738" height="50.90909090909091" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-64" value="向Inventory / Stash中添加物品时，如果已有该物品，则调用该物品的AddStack()方法；如果没有该物品，则向List和Dict中添加新的元素" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="zPP25lYwPmgQLzwcbYbT-50" vertex="1">
           <mxGeometry x="1080" y="430" width="560" height="224" as="geometry" />
@@ -152,6 +152,27 @@
         </mxCell>
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-68" value="&lt;div&gt;// 角色身穿的装备&lt;/div&gt;Equipment&lt;div&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;List&amp;lt;InventoryItem&amp;gt; equipment;&amp;nbsp;&lt;/span&gt;&amp;nbsp;&lt;font style=&quot;&quot;&gt;(For Equipment)&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;Dictionary&amp;lt;ItemData_Equipment, InventoryItem&amp;gt; equipmentDictionary&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 25, 255);&quot;&gt;&lt;font&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;UI_EquipmentSlot[] equipmentSlots;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" vertex="1" parent="zPP25lYwPmgQLzwcbYbT-50">
           <mxGeometry x="820" y="290" width="373" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-70" value="" style="group;spacingTop=20;" vertex="1" connectable="0" parent="zPP25lYwPmgQLzwcbYbT-50">
+          <mxGeometry x="1240" y="650" width="490" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-71" value="" style="group;fillColor=#dae8fc;strokeColor=#6c8ebf;container=0;" vertex="1" connectable="0" parent="Q-6nTU4BEiaYLGhQLXsv-70">
+          <mxGeometry width="490" height="333.8181818181818" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-72" value="EquipItem(ItemData _item)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;container=0;fillColor=#dae8fc;strokeColor=#6c8ebf;size=0.10204081632653061;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-70">
+          <mxGeometry y="61.82" width="490" height="728.18" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-73" value="根据newEquipment 的equipmentType，在equipmentDict中查找当前角色身上是否已经穿着了该类型的装备；如果有，查找到oldEquip, 先&lt;div&gt;UnequipItem(oldEquip); 并将其重新添加到inventory中&lt;/div&gt;&lt;div&gt;AddItem(oldEquip);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-70">
+          <mxGeometry x="50" y="360" width="380" height="207.27" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-74" value="equipment.Add(newItem);&lt;div&gt;equipmentDict.Add(newEquipment, newItem);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-70">
+          <mxGeometry x="60" y="580" width="370" height="85.45" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-76" value="由于equipmentDict中的KeyValuePairs是&lt;div&gt;&amp;lt;ItemData_Equipment, InventoryItem&amp;gt;&lt;/div&gt;&lt;div&gt;所以需要先将&lt;/div&gt;&lt;div&gt;ItemData_Equipment&amp;nbsp; newEquipment = _item as ItemData_Equipment；&lt;/div&gt;&lt;div&gt;同时创建新的&lt;/div&gt;&lt;div&gt;InventoryItem newItem = new Inventory(_item);&lt;/div&gt;&lt;div&gt;因为inventory / equipment列表中存储的都是InventoryItem类型&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-70">
+          <mxGeometry x="50" y="80" width="390" height="268.18" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-77" value="newEquipment.AddModifiers();&lt;div&gt;修改人物数值属性；&lt;/div&gt;&lt;div&gt;RemoveItem(_item); 从inventory中移除_item&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;fontStyle=1;fontFamily=Comic Sans MS;container=0;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-70">
+          <mxGeometry x="60" y="680" width="370" height="95.45" as="geometry" />
         </mxCell>
         <mxCell id="zPP25lYwPmgQLzwcbYbT-70" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2860" y="390" width="1180" height="340" as="geometry" />
