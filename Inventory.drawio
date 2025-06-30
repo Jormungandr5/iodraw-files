@@ -1,12 +1,9 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.1">
   <diagram name="第 1 页" id="d9a0k_mFq8F035uaQbnA">
-    <mxGraphModel dx="5685" dy="3633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7700" dy="4281" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-47" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-2490" y="140" width="1620" height="1130" as="geometry" />
-        </mxCell>
         <mxCell id="BGFAUAhON6pVx7UzGT0B-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="zPP25lYwPmgQLzwcbYbT-2" target="BGFAUAhON6pVx7UzGT0B-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -205,12 +202,6 @@
         <mxCell id="BGFAUAhON6pVx7UzGT0B-19" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;UI_EquipmentSlot : UI_ItemSlot&lt;/b&gt;&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;fontStyle=0;size=130;" parent="1" vertex="1">
           <mxGeometry x="2760" y="1270" width="1030" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BGFAUAhON6pVx7UzGT0B-21" target="Q-6nTU4BEiaYLGhQLXsv-47">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="BGFAUAhON6pVx7UzGT0B-21" value="ItemEffect : ScriptableObject&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;virtual void ExecuteEffect(Transform _enemyPosition);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="-1940" y="-177.88" width="520" height="170" as="geometry" />
-        </mxCell>
         <mxCell id="BGFAUAhON6pVx7UzGT0B-35" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="-1400" y="1410" width="340" height="400" as="geometry" />
         </mxCell>
@@ -385,20 +376,38 @@
         <mxCell id="Q-6nTU4BEiaYLGhQLXsv-35" value="MaterialImage.stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;fontStyle=1;fontFamily=Comic Sans MS;container=0;align=center;verticalAlign=middle;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-33">
           <mxGeometry x="90" y="90" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-40" value="Buff_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PlayerStats stats;&lt;/div&gt;&lt;div&gt;StatType buffType;&lt;/div&gt;&lt;div&gt;int buffAmount;&lt;/div&gt;&lt;div&gt;float buffDuration;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-2410" y="765" width="530" height="300" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-49" value="LightingStrike_Effect的使用过程：&lt;div&gt;如果现在一个ItemData_Equipment的&lt;/div&gt;&lt;div&gt;ItemEffect[ ]数组中添加了LightingStrike_Effect;&lt;/div&gt;&lt;div&gt;则在该ItemData_equipment的&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(6, 255, 47);&quot;&gt;void ExecuteItemEffect()&lt;/font&gt;&lt;font style=&quot;color: rgb(22, 255, 6);&quot;&gt;方法&lt;/font&gt;中会调用&lt;/div&gt;&lt;div&gt;itemEffects[ ] 数组中的每个itemEffect.Execute(_enemyPosition);方法;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;然后，在 PlayerAnimationTrigger.cs中，AttackTrigger()方法中，检测当前Player是否装备了weapon，如果装备了weapon,则调用该装备的&lt;font style=&quot;color: rgb(22, 255, 6);&quot;&gt;ExecuteItemEffect()方法,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;然后，在player的攻击动画中的帧中添加事件执行AttackTrigger()方法&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffcd28;fontSize=30;fontStyle=3;strokeColor=#d79b00;gradientColor=#ffa500;" vertex="1" parent="1">
+          <mxGeometry x="-1740" y="360" width="1380" height="670" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-42" value="IceAndFire_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GameObject iceAndFirePrefab;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Vector2 newVelocity;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _respondPosition)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-1850" y="705" width="400" height="360" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-51" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-3330" y="-200" width="1620" height="1447.88" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-44" value="&lt;div&gt;FreezeEnemies_Effect : ItemEffect&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;float duration;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _player)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="730" width="400" height="360" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-47" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-51">
+          <mxGeometry y="317.88" width="1620" height="1130" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-45" value="Heal_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;float healPercent;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-2390" y="390" width="530" height="300" as="geometry" />
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-50" value="" style="group" vertex="1" connectable="0" parent="Q-6nTU4BEiaYLGhQLXsv-51">
+          <mxGeometry x="80" width="1410" height="1267.88" as="geometry" />
         </mxCell>
-        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-46" value="LightingStrike_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GameObject lightingStrikePrefab;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;&lt;div&gt;{// Instantiate new LightingStrike; }&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-1750" y="380" width="710" height="300" as="geometry" />
+        <mxCell id="BGFAUAhON6pVx7UzGT0B-21" value="ItemEffect : ScriptableObject&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;virtual void ExecuteEffect(Transform _enemyPosition);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Q-6nTU4BEiaYLGhQLXsv-50" vertex="1">
+          <mxGeometry x="470" width="520" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-40" value="Buff_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PlayerStats stats;&lt;/div&gt;&lt;div&gt;StatType buffType;&lt;/div&gt;&lt;div&gt;int buffAmount;&lt;/div&gt;&lt;div&gt;float buffDuration;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-50">
+          <mxGeometry y="942.88" width="530" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-42" value="IceAndFire_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GameObject iceAndFirePrefab;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Vector2 newVelocity;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _respondPosition)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-50">
+          <mxGeometry x="560" y="882.88" width="400" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-44" value="&lt;div&gt;FreezeEnemies_Effect : ItemEffect&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;float duration;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _player)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-50">
+          <mxGeometry x="1010" y="907.88" width="400" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-45" value="Heal_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;float healPercent;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-50">
+          <mxGeometry x="20" y="567.88" width="530" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-46" value="LightingStrike_Effect : ItemEffect&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GameObject lightingStrikePrefab;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;override void ExecuteEffect(Transform _enemyPosition)&lt;/div&gt;&lt;div&gt;{// Instantiate new LightingStrike; }&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontSize=20;fontFamily=Comic Sans MS;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="Q-6nTU4BEiaYLGhQLXsv-50">
+          <mxGeometry x="660" y="557.88" width="710" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q-6nTU4BEiaYLGhQLXsv-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Q-6nTU4BEiaYLGhQLXsv-51" source="BGFAUAhON6pVx7UzGT0B-21" target="Q-6nTU4BEiaYLGhQLXsv-47">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
