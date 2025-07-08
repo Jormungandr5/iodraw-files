@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.2.0">
   <diagram name="第 1 页" id="-2ZJdPU1EGzkgh0zn1c5">
-    <mxGraphModel dx="11161" dy="13363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7358" dy="11291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -604,7 +604,7 @@
         <mxCell id="B_nVN4fboFG4_9kOqA88-264" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="B_nVN4fboFG4_9kOqA88-282" source="B_nVN4fboFG4_9kOqA88-244" target="B_nVN4fboFG4_9kOqA88-261" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="B_nVN4fboFG4_9kOqA88-244" value="CharacterStats: Monobehaviour&lt;div&gt;int currentHealth;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Methods&lt;/div&gt;&lt;div&gt;DoDamage(CharacterStats _targetStats);&lt;/div&gt;&lt;div&gt;TakeDamage(int _damage);&lt;/div&gt;&lt;div&gt;Die();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
+        <mxCell id="B_nVN4fboFG4_9kOqA88-244" value="CharacterStats: Monobehaviour&lt;div&gt;int currentHealth;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Methods&lt;/div&gt;&lt;div&gt;CauseDamageToEnemy(CharacterStats _targetStats);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TakeDamageUnderAttack&lt;/span&gt;(int _damage);&lt;/div&gt;&lt;div&gt;Die();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
           <mxGeometry x="1715" y="210" width="1480" height="833" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-245" value="Stat damage;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
@@ -619,32 +619,35 @@
         <mxCell id="B_nVN4fboFG4_9kOqA88-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="B_nVN4fboFG4_9kOqA88-282" source="B_nVN4fboFG4_9kOqA88-248" target="B_nVN4fboFG4_9kOqA88-246" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="B_nVN4fboFG4_9kOqA88-248" value="PlayerStats&lt;div&gt;override TakeDamage():&lt;/div&gt;&lt;div&gt;{player.DamageEffect();}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
-          <mxGeometry x="1490" y="1290" width="740" height="493" as="geometry" />
+        <mxCell id="B_nVN4fboFG4_9kOqA88-248" value="PlayerStats&lt;div&gt;override TakeDamageUnderAttack():&lt;/div&gt;&lt;div&gt;{player.DamageEffect();}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
+          <mxGeometry x="1180" y="1290" width="1050" height="493" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-255" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="B_nVN4fboFG4_9kOqA88-282" source="B_nVN4fboFG4_9kOqA88-249" target="B_nVN4fboFG4_9kOqA88-246" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="B_nVN4fboFG4_9kOqA88-249" value="EnemyStats&lt;div&gt;overrid TakeDamage():&lt;/div&gt;&lt;div&gt;{Enemy.DamageEffect();}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
-          <mxGeometry x="2760" y="1290" width="740" height="493" as="geometry" />
+        <mxCell id="B_nVN4fboFG4_9kOqA88-249" value="EnemyStats&lt;div&gt;overrid&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;TakeDamageUnderAttack&lt;/span&gt;():&lt;/div&gt;&lt;div&gt;{Enemy.DamageEffect();}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
+          <mxGeometry x="2760" y="1290" width="960" height="493" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-252" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;Player&lt;/b&gt;&lt;/font&gt; player;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#cdeb8b;strokeColor=#36393d;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
-          <mxGeometry x="1756.8999999999996" y="1570" width="206.21" height="103.85" as="geometry" />
+          <mxGeometry x="1540" y="1570" width="310" height="143.85" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-253" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;Enemy&lt;/b&gt;&lt;/font&gt;&lt;div&gt;Enemy;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#cdeb8b;strokeColor=#36393d;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
-          <mxGeometry x="3040" y="1570" width="206.21" height="103.85" as="geometry" />
+          <mxGeometry x="3110" y="1580" width="280" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="B_nVN4fboFG4_9kOqA88-258" value="&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;DoDamage(CharacterStats _targetStats)&lt;/font&gt;&lt;/b&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;int totalDamage = damage.GetValue() + strength.GetValue();&lt;br&gt;_targetStats.&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;TakeDamage(totalDamage);&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
+        <mxCell id="B_nVN4fboFG4_9kOqA88-258" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;CauseDamageToEnemy&lt;/font&gt;&lt;/span&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;(CharacterStats _targetStats)&lt;/font&gt;&lt;/b&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;int totalDamage = damage.GetValue() + strength.GetValue();&lt;br&gt;_targetStats.&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;TakeDamageUnderAttack(totalDamage);&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
           <mxGeometry x="3340" y="240" width="1240" height="401.5" as="geometry" />
         </mxCell>
-        <mxCell id="B_nVN4fboFG4_9kOqA88-261" value="&lt;font style=&quot;&quot; face=&quot;Courier New&quot;&gt;&lt;b&gt;TakeDamage(int _damage)&lt;/b&gt;&lt;/font&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;currentHealth -= _damage;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;if (currentHealth &amp;lt; 0)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Die();&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
+        <mxCell id="B_nVN4fboFG4_9kOqA88-261" value="&lt;font style=&quot;&quot; face=&quot;Courier New&quot;&gt;&lt;b&gt;TakeDamageUnderAttack(int _damage)&lt;/b&gt;&lt;/font&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;currentHealth -= _damage;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;if (currentHealth &amp;lt; 0)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Die();&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
           <mxGeometry x="3340" y="740" width="1220" height="373" as="geometry" />
         </mxCell>
         <mxCell id="B_nVN4fboFG4_9kOqA88-262" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.502;entryY=0.117;entryDx=0;entryDy=0;entryPerimeter=0;" parent="B_nVN4fboFG4_9kOqA88-282" source="B_nVN4fboFG4_9kOqA88-258" target="B_nVN4fboFG4_9kOqA88-261" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="B_nVN4fboFG4_9kOqA88-268" value="这里的DoDamage接受一个CharacterStats 类型的参数target;是将自己（this）的damage 对 targetStats的Health造成伤害;&lt;div&gt;在自己的DoDamage中，调用targetStats的TakeDamage()方法&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=210;position=0.56;base=92;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontSize=50;fontStyle=1;fontFamily=Comic Sans MS;position2=0.32;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
-          <mxGeometry x="2450" width="890" height="600" as="geometry" />
+        <mxCell id="B_nVN4fboFG4_9kOqA88-268" value="这里的CauseDamageToEnemy接受一个CharacterStats 类型的参数target;是将自己（this）的damage 对 targetStats的Health造成伤害;&lt;div&gt;在自己的DoDamage中，调用targetStats的TakeDamageUnderAttack()方法&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=210;position=0.56;base=92;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;fontSize=50;fontStyle=1;fontFamily=Comic Sans MS;position2=0.32;" parent="B_nVN4fboFG4_9kOqA88-282" vertex="1">
+          <mxGeometry x="2450" y="-100" width="890" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="dEQ_y-BNc5binZupuLm0-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.888;entryY=0.674;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="B_nVN4fboFG4_9kOqA88-282" source="B_nVN4fboFG4_9kOqA88-252" target="B_nVN4fboFG4_9kOqA88-252">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lwo_E-M_du47u114pg7D-11" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;Entity中，注册了事件&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;public System.Action.onFlipped;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;在Entity脚本的Flip()方法中，&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;控制角色Flip时，&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;onFlipped ?.Invoke();&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;fontSize=50;" parent="1" vertex="1">
           <mxGeometry x="11550" y="-6960" width="1240" height="450" as="geometry" />
@@ -685,33 +688,6 @@
         <mxCell id="lwo_E-M_du47u114pg7D-18" value="Clone_Skill 是基础技能" style="triangle;whiteSpace=wrap;html=1;spacingRight=50;spacingBottom=-2;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-840" y="40" width="250" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-1" value="&lt;div&gt;Crystal_Skill&lt;/div&gt;&lt;div&gt;释放水晶，停留原地交换位置&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="22470" y="-240" width="1030" height="390" as="geometry" />
-        </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-2" value="&lt;div&gt;Crystal_Illusion:&lt;/div&gt;&lt;div&gt;和Crystal交换位置后在原地留下一个幻影&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="21120" y="350" width="1030" height="390" as="geometry" />
-        </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-3" value="&lt;div&gt;Crystal_Explosion:&lt;/div&gt;&lt;div&gt;和Crystal交换位置时，原地爆炸&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="22480" y="350" width="1030" height="390" as="geometry" />
-        </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-4" value="&lt;div&gt;Crystal_Destruction&lt;/div&gt;&lt;div&gt;释放水晶自动索敌&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="23900" y="370" width="1030" height="390" as="geometry" />
-        </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-5" value="&lt;div&gt;Crystal_Multiple&lt;/div&gt;&lt;div&gt;多重水晶自动索敌&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="23900" y="1070" width="1030" height="390" as="geometry" />
-        </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#008a00;strokeColor=#005700;" parent="1" source="IBjmOPdXkIMtF4CsfO1L-4" target="IBjmOPdXkIMtF4CsfO1L-5" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="24340" y="880" as="sourcePoint" />
-            <mxPoint x="24390" y="830" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-11" value="和水晶交换位置；&lt;div&gt;有两个计时器时间：&lt;/div&gt;&lt;div&gt;1. 应该在和水晶交换位置之后开始进入技能冷却&lt;/div&gt;&lt;div&gt;2. 如果超过固定时间，没有二次使用技能交换位置，则水晶销毁，进入冷却&lt;/div&gt;" style="swimlane;horizontal=1;whiteSpace=wrap;html=1;startSize=380;fontSize=50;" parent="1" vertex="1">
-          <mxGeometry x="20660" y="-710" width="2970" height="1530" as="geometry" />
-        </mxCell>
-        <mxCell id="IBjmOPdXkIMtF4CsfO1L-12" value="这两种情况下无法和水晶交换位置：&lt;div&gt;计时器时间：&lt;/div&gt;&lt;div&gt;1. 在没有解锁多重索敌时，只能用一次，使用之后技能就进入冷却&lt;/div&gt;&lt;div&gt;2.解锁多重索敌，则水晶List用完时进入冷却；&lt;/div&gt;&lt;div&gt;或者释放水晶超时进入冷却&lt;/div&gt;" style="swimlane;horizontal=1;whiteSpace=wrap;html=1;startSize=380;fontSize=50;" parent="1" vertex="1">
-          <mxGeometry x="23760" y="-75" width="1320" height="1665" as="geometry" />
-        </mxCell>
         <mxCell id="dEQ_y-BNc5binZupuLm0-2" value="在PlayerGroudedState的Update中，如果按下鼠标右键，StateMachine.ChangeState(player.aimSwordState);&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fontFamily=Comic Sans MS;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;spacingTop=50;" vertex="1" parent="1">
           <mxGeometry x="8550" y="-2048.5" width="1760" height="797" as="geometry" />
         </mxCell>
@@ -735,6 +711,36 @@
             <mxPoint x="2860" y="900" as="sourcePoint" />
             <mxPoint x="2960" y="800" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="dEQ_y-BNc5binZupuLm0-40" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="18010" y="-1680" width="4420" height="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-1" value="&lt;div&gt;Crystal_Skill&lt;/div&gt;&lt;div&gt;释放水晶，停留原地交换位置&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="dEQ_y-BNc5binZupuLm0-40" vertex="1">
+          <mxGeometry x="1810" y="470" width="1030" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-2" value="&lt;div&gt;Crystal_Illusion:&lt;/div&gt;&lt;div&gt;和Crystal交换位置后在原地留下一个幻影&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="dEQ_y-BNc5binZupuLm0-40" vertex="1">
+          <mxGeometry x="460" y="1060" width="1030" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-3" value="&lt;div&gt;Crystal_Explosion:&lt;/div&gt;&lt;div&gt;和Crystal交换位置时，原地爆炸&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="dEQ_y-BNc5binZupuLm0-40" vertex="1">
+          <mxGeometry x="1820" y="1060" width="1030" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-4" value="&lt;div&gt;Crystal_Destruction&lt;/div&gt;&lt;div&gt;释放水晶自动索敌&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="dEQ_y-BNc5binZupuLm0-40" vertex="1">
+          <mxGeometry x="3240" y="1080" width="1030" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-5" value="&lt;div&gt;Crystal_Multiple&lt;/div&gt;&lt;div&gt;多重水晶自动索敌&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=50;fontStyle=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="dEQ_y-BNc5binZupuLm0-40" vertex="1">
+          <mxGeometry x="3240" y="1780" width="1030" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#008a00;strokeColor=#005700;" parent="dEQ_y-BNc5binZupuLm0-40" source="IBjmOPdXkIMtF4CsfO1L-4" target="IBjmOPdXkIMtF4CsfO1L-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3680" y="1590" as="sourcePoint" />
+            <mxPoint x="3730" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-11" value="和水晶交换位置；&lt;div&gt;有两个计时器时间：&lt;/div&gt;&lt;div&gt;1. 应该在和水晶交换位置之后开始进入技能冷却&lt;/div&gt;&lt;div&gt;2. 如果超过固定时间，没有二次使用技能交换位置，则水晶销毁，进入冷却&lt;/div&gt;" style="swimlane;horizontal=1;whiteSpace=wrap;html=1;startSize=380;fontSize=50;" parent="dEQ_y-BNc5binZupuLm0-40" vertex="1">
+          <mxGeometry width="2970" height="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="IBjmOPdXkIMtF4CsfO1L-12" value="这两种情况下无法和水晶交换位置：&lt;div&gt;计时器时间：&lt;/div&gt;&lt;div&gt;1. 在没有解锁多重索敌时，只能用一次，使用之后技能就进入冷却&lt;/div&gt;&lt;div&gt;2.解锁多重索敌，则水晶List用完时进入冷却；&lt;/div&gt;&lt;div&gt;或者释放水晶超时进入冷却&lt;/div&gt;" style="swimlane;horizontal=1;whiteSpace=wrap;html=1;startSize=380;fontSize=50;" parent="dEQ_y-BNc5binZupuLm0-40" vertex="1">
+          <mxGeometry x="3100" y="635" width="1320" height="1665" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
