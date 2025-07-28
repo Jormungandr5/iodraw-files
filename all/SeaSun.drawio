@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="28.0.6">
   <diagram name="第 1 页" id="FibqpJY_o9arbTggmfum">
-    <mxGraphModel dx="6728" dy="3751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8209" dy="4558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -281,6 +281,9 @@
         </mxCell>
         <mxCell id="ByDf17tQ4c6cYHctI-6C-85" value="&lt;div&gt;如果一个类实现了两个接口，这两个接口中有同名方法（如 Length() 和 Width()），&lt;/div&gt;&lt;div&gt;如果你只写了普通的公有实现（比如public float Length() =&amp;gt; ...;），那么这将被当作对所有接口的实现，除非某个接口被显式实现。&lt;/div&gt;&lt;div&gt;如果你对某个接口用了显式实现语法（如float IMetricDimensions.Length() =&amp;gt; ...），那么这个实现只属于该接口，通过类实例无法直接访问。&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=25;fontStyle=3" vertex="1" parent="1">
           <mxGeometry x="-3750" y="1334" width="920" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ByDf17tQ4c6cYHctI-6C-87" value="KUIViewBase&lt;div&gt;KUIView&lt;/div&gt;&lt;div&gt;KUIViewMono&lt;/div&gt;&lt;div&gt;CGlobalVehicleSystem&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontSize=50;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-1260" y="-2170" width="980" height="350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
