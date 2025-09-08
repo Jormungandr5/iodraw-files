@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.2.0">
   <diagram name="第 1 页" id="CxN-nvPnmQ1PO7884Idd">
-    <mxGraphModel dx="2655" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4244" dy="1358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -47,7 +47,7 @@
           <mxGeometry x="360" y="30" width="600" height="100" as="geometry" />
         </mxCell>
         <mxCell id="kjXMb5Oc9gqvb5fUqaoA-31" value="The ECS Architecture Of OverWatch" style="swimlane;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="510" width="1650" height="560" as="geometry" />
+          <mxGeometry x="-680" y="510" width="1650" height="470" as="geometry" />
         </mxCell>
         <mxCell id="kjXMb5Oc9gqvb5fUqaoA-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-31" source="kjXMb5Oc9gqvb5fUqaoA-33" target="kjXMb5Oc9gqvb5fUqaoA-34">
           <mxGeometry relative="1" as="geometry" />
@@ -90,6 +90,60 @@
         </mxCell>
         <mxCell id="kjXMb5Oc9gqvb5fUqaoA-45" value="Component:&lt;div&gt;抽象基类&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-31">
           <mxGeometry x="990" y="255" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-48" value="The ECS Architecture Of OverWatch" style="swimlane;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-1200" y="1080" width="2210" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-48" source="kjXMb5Oc9gqvb5fUqaoA-50" target="kjXMb5Oc9gqvb5fUqaoA-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-50" value="EntityAdmin:&lt;div&gt;Array&amp;lt;System&amp;gt; : 保存了一组系统&lt;/div&gt;&lt;div&gt;hash_map&amp;lt;EntityID, Entity&amp;gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="670" y="159" width="370" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-51" value="System" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="1080" y="79" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-48" source="kjXMb5Oc9gqvb5fUqaoA-62" target="kjXMb5Oc9gqvb5fUqaoA-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-48" source="kjXMb5Oc9gqvb5fUqaoA-62" target="kjXMb5Oc9gqvb5fUqaoA-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-48" source="kjXMb5Oc9gqvb5fUqaoA-62" target="kjXMb5Oc9gqvb5fUqaoA-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-48" source="kjXMb5Oc9gqvb5fUqaoA-56" target="kjXMb5Oc9gqvb5fUqaoA-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-56" value="Entity:&lt;div&gt;EntityID // 标识EntityAdmin中的unique实体；&lt;/div&gt;&lt;div&gt;Array&amp;lt;Component&amp;gt;;&lt;/div&gt;&lt;div&gt;resourceHandle&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="1080" y="229" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.627;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-48" source="kjXMb5Oc9gqvb5fUqaoA-50" target="kjXMb5Oc9gqvb5fUqaoA-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-58" value="Component&amp;nbsp; A" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="1994" y="169" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-59" value="Component&amp;nbsp; B" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="1994" y="274" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-60" value="Component&amp;nbsp; C" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="1994" y="379" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-61" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; text-align: left; background-color: rgb(247, 247, 248);&quot;&gt;多态主要用来保证所有组件都有一致的生命周期接口，而不是用来写行为&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; text-align: left; background-color: rgb(247, 247, 248);&quot;&gt;换句话说：&lt;span style=&quot;box-sizing: inherit; font-weight: 600;&quot;&gt;继承的作用就是让 Entity 能用统一的方式去存储/管理各种不同类型的组件对象&lt;/span&gt;。&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="1400" y="69" width="530" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-62" value="Component:&lt;div&gt;抽象基类&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="1570" y="274" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kjXMb5Oc9gqvb5fUqaoA-48" source="kjXMb5Oc9gqvb5fUqaoA-63" target="kjXMb5Oc9gqvb5fUqaoA-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-63" value="&lt;div&gt;&lt;div&gt;ClientGame :&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="110" y="139.5" width="370" height="149" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMb5Oc9gqvb5fUqaoA-66" value="&lt;div&gt;&lt;div&gt;liveGame : EntityAdmin&lt;/div&gt;&lt;/div&gt;&lt;div&gt;replayGame : EntityAdmin&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=5;fontSize=20;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;" vertex="1" parent="kjXMb5Oc9gqvb5fUqaoA-48">
+          <mxGeometry x="150" y="219" width="290" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
