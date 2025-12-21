@@ -1,9 +1,60 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="第 1 页" id="Q2ZsAGgyyhIdZ9an2QnX">
-    <mxGraphModel>
+    <mxGraphModel dx="1554" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vertical Container" vertex="1">
+          <mxGeometry height="200" width="370" x="300" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-3" parent="Iy3axCZ3-uKmuE2MSwp1-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;delegate 返回类型 委托名（参数列表）&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;eg：&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;public delegate void MyDelegate(string message)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="366.25" x="3.75" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-1" parent="Iy3axCZ3-uKmuE2MSwp1-2" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=6" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Delegate:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;（&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;box-sizing: inherit; font-weight: 600; color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; text-align: start; background-color: rgb(247, 247, 248);&quot;&gt;delegate 是一种类型&lt;/span&gt;&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; text-align: start; background-color: rgb(247, 247, 248);&quot;&gt;，可以理解为“函数指针”的安全版本&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;）&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="80" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vertical Container" vertex="1">
+          <mxGeometry height="200" width="370" x="60" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-6" parent="Iy3axCZ3-uKmuE2MSwp1-5" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;无返回类型、无参数类型的委托&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;eg:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Action noParams =&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;() =&amp;gt; Debug.Log(&quot;No para&quot;);&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="366.25" x="3.75" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-7" parent="Iy3axCZ3-uKmuE2MSwp1-5" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="80" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vertical Container" vertex="1">
+          <mxGeometry height="200" width="370" x="460" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-9" parent="Iy3axCZ3-uKmuE2MSwp1-8" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;无参数类型类型、有返回类型的委托&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;eg：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="366.25" x="3.75" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-10" parent="Iy3axCZ3-uKmuE2MSwp1-8" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Func&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="80" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-11" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vertical Container" vertex="1">
+          <mxGeometry height="240" width="370" x="60" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-13" parent="Iy3axCZ3-uKmuE2MSwp1-11" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Action&amp;lt;,&amp;gt;&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="80" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-14" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Vertical Container" vertex="1">
+          <mxGeometry height="230" width="370" x="457" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-15" parent="Iy3axCZ3-uKmuE2MSwp1-14" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;有参数类型、有返回类型&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;eg:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Func&amp;lt;int, int&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="366.25" x="3.75" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-16" parent="Iy3axCZ3-uKmuE2MSwp1-14" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Func&amp;lt;,&amp;gt;&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Arial, sans-serif; font-size: medium; text-align: start; white-space: pre;&quot;&gt;&lt;b&gt;Func&amp;lt;T1, T2, ..., TResult&amp;gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="80" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-17" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=50;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;.Net内置的泛型委托类型（相当于语法糖）&lt;/font&gt;" vertex="1">
+          <mxGeometry height="570" width="850" x="30" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-12" parent="Iy3axCZ3-uKmuE2MSwp1-17" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;delegate 返回类型 委托名（参数列表）&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;eg：&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;public delegate void MyDelegate(string message)；&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Action&amp;lt;int, string&amp;gt; show =&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;(id, name) =&amp;gt; Debug.Log($&quot;{id} : {name}&quot;)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="380" x="33.75" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Iy3axCZ3-uKmuE2MSwp1-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Lambda表达式：&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;（参数列表）=&amp;gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;{&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;函数体&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;}&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="210" x="290" y="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
