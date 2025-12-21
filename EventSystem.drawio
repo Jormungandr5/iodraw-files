@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="第 1 页" id="Q2ZsAGgyyhIdZ9an2QnX">
-    <mxGraphModel dx="1899" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3208" dy="1984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -103,6 +103,32 @@
         </mxCell>
         <mxCell id="Iy3axCZ3-uKmuE2MSwp1-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;u&gt;&lt;i&gt;Action&amp;lt;int&amp;gt;&lt;/i&gt;&lt;/u&gt; d2 = (n) =&amp;gt; Console.WriteLine(n);" vertex="1">
           <mxGeometry height="40" width="290" x="-180" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="F41taC0-kmbh0b4UJ02y-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Vertical Container" vertex="1">
+          <mxGeometry height="260" width="590" x="-530" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="F41taC0-kmbh0b4UJ02y-3" parent="F41taC0-kmbh0b4UJ02y-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="1. public delegate void EventHandler(object sender, EventArgs e)&lt;div&gt;定义了一个委托EventHandler，无返回类型，接受两个参数，一个是object类型的参数，一个是EventArgs类型的参数&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="366.25" x="120" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F41taC0-kmbh0b4UJ02y-4" parent="F41taC0-kmbh0b4UJ02y-2" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=6;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;EventHandler&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="180" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="F41taC0-kmbh0b4UJ02y-7" parent="F41taC0-kmbh0b4UJ02y-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="&lt;div&gt;&lt;div&gt;2. 泛型版本：&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;EventHandler&amp;lt;TEventArgs&amp;gt;:&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Arial, sans-serif; font-size: medium; text-align: start; white-space: pre;&quot;&gt;public delegate void EventHandler&amp;lt;&lt;i&gt;&lt;b&gt;TEventArgs&lt;/b&gt;&lt;/i&gt;&amp;gt;(object sender, &lt;b&gt;&lt;i&gt;TEventArgs &lt;/i&gt;&lt;/b&gt;e)&lt;br&gt;    where &lt;b&gt;&lt;i&gt;TEventArgs &lt;/i&gt;&lt;/b&gt;: EventArgs;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="550" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="F41taC0-kmbh0b4UJ02y-5" edge="1" parent="1" source="Iy3axCZ3-uKmuE2MSwp1-2" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="288.5499999999999" y="300" as="sourcePoint" />
+            <mxPoint x="60" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F41taC0-kmbh0b4UJ02y-6" connectable="0" parent="F41taC0-kmbh0b4UJ02y-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;.Net中约定好的委托签名&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2697" y="-3" as="geometry">
+            <mxPoint x="-28" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F41taC0-kmbh0b4UJ02y-8" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=14;fontColor=#630EFF;" value="也就是说，&lt;div&gt;event EventHandler MyEvent;&lt;/div&gt;&lt;div&gt;等价于 =&amp;gt;&lt;/div&gt;&lt;div&gt;delegate void EventHandler(object&amp;nbsp; sender, EventArgs e);&lt;/div&gt;&lt;div&gt;event EventHandler MyEvent;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="920" x="-1510" y="-90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
