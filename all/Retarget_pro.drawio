@@ -4,8 +4,38 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CF5Gh3Tiwg0G9H5997SS-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="KRigElement:&lt;div&gt;包含rig的name/index/depth信息&lt;/div&gt;" vertex="1">
+        <mxCell id="CF5Gh3Tiwg0G9H5997SS-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="KRigElement:&lt;div&gt;包含rig的name/index/depth信息&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="210" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="KPose" vertex="1">
+          <mxGeometry height="140" width="200" x="50" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-6" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="160" width="370" x="620" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-3" parent="ILK6-8lgbBPbqbnNsDaZ-6" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;align=center;" value="&lt;b&gt;&lt;i&gt;RetargetProfile(配置文件，继承自ScriptableObject&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;i&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="320" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-5" parent="ILK6-8lgbBPbqbnNsDaZ-6" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="110" width="370" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-7" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="160" width="370" x="430" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-8" parent="ILK6-8lgbBPbqbnNsDaZ-7" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;align=center;" value="&lt;div&gt;&lt;b&gt;&lt;i&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;KRigElementChain&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="320" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-9" parent="ILK6-8lgbBPbqbnNsDaZ-7" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="110" width="370" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-13" connectable="0" parent="ILK6-8lgbBPbqbnNsDaZ-7" style="group" value="" vertex="1">
+          <mxGeometry height="40" width="310" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-12" parent="ILK6-8lgbBPbqbnNsDaZ-13" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=3" value="KRigElementChain:&lt;div&gt;是一个KRigElement的List&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ILK6-8lgbBPbqbnNsDaZ-10" parent="ILK6-8lgbBPbqbnNsDaZ-13" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=3" value="KRigElement:" vertex="1">
+          <mxGeometry height="30" width="120" x="190" y="5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
