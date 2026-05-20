@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="Z0DC_knzU1L9sbGcegjl">
-    <mxGraphModel dx="1338" dy="327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+    <mxGraphModel dx="1557" dy="1636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,8 +34,8 @@
         <mxCell id="fx_5rI_hlLQzRWBr8DUU-112" parent="fx_5rI_hlLQzRWBr8DUU-58" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#432D57;fillColor=#318A07;fontColor=#ffffff;" value="" vertex="1">
           <mxGeometry height="14" width="14" x="98" y="6" as="geometry" />
         </mxCell>
-        <mxCell id="fx_5rI_hlLQzRWBr8DUU-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000, #080808);" value="pitch = angle;" vertex="1">
-          <mxGeometry height="30" width="100" x="210" y="100" as="geometry" />
+        <mxCell id="fx_5rI_hlLQzRWBr8DUU-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000, #080808);" value="悬浮滑板当前的pitch计算：&lt;div&gt;nowAngle = Vector3.Angle(m_Transform.up, Vector3.up);&lt;/div&gt;&lt;div&gt;pitchScale = PitchSpeedCurve,Evaluate(nowAngle / 90);&lt;/div&gt;&lt;div&gt;当前俯仰角的角度也会影响nTargetSpeed(m_CurrentMoveSpeed);&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="370" x="15" y="-10" as="geometry" />
         </mxCell>
         <mxCell id="fx_5rI_hlLQzRWBr8DUU-61" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;strokeWidth=1;strokeColor=light-dark(#190033,#000033);" value="Right">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -297,6 +297,9 @@
         </mxCell>
         <mxCell id="fx_5rI_hlLQzRWBr8DUU-106" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000, #080808);" value="这里FloatingBoard可以是朝向任意方向，&lt;div&gt;主要根据Camera方向进行计算&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="240" x="740" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_5rI_hlLQzRWBr8DUU-113" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontColor=light-dark(#000000, #080808);" value="pitch = angle;" vertex="1">
+          <mxGeometry height="30" width="100" x="217.5" y="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
