@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="JKm8eNT5LhcCvcYsY2wh">
-    <mxGraphModel dx="1110" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2423" dy="2227" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,6 +45,12 @@
         </mxCell>
         <mxCell id="fBmv-VpW1MZZ_E2-W35G-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=20;" value="&lt;b&gt;&lt;i&gt;&lt;u&gt;rasterizer&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="230" x="810" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="fBmv-VpW1MZZ_E2-W35G-17" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=120;fontSize=30;" value="HW3" vertex="1">
+          <mxGeometry height="700" width="1080" x="130" y="-450" as="geometry" />
+        </mxCell>
+        <mxCell id="fBmv-VpW1MZZ_E2-W35G-19" parent="1" style="shape=wedgeCallout;whiteSpace=wrap;html=1;tipX=1.222;tipY=0.848;fontSize=19;" value="理论上应该是存储顶点索引而不是直接存储顶点信息；这样多个三角形可以复用顶点" vertex="1">
+          <mxGeometry height="131.67" width="240" x="-190" y="-120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
